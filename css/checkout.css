@@ -1,14 +1,18 @@
 @font-face {
-    font-family: myfont;
-    src: url("../fonts/Poppins-Regular.ttf");
+    font-family: poppinsfont;
+    src: url("../font/Poppins-Regular.ttf");
 }
 @font-face {
-    font-family: popinsmed;
-    src: url("../fonts/Poppins-Medium.ttf");
+    font-family: interfont;
+    src: url("../fonts/Inter-Bold.ttf");
 }
 @font-face {
-    font-family: myfont2;
-    src: url("../fonts2/Inter-Regular.ttf");
+    font-family: intermedium;
+    src: url("../fonts/Inter-Medium.ttf");
+}
+@font-face {
+    font-family: mediumfont;
+    src: url('../font/Poppins-Medium.ttf');
 }
 
 
@@ -19,7 +23,15 @@
 }
 header{
     height: 20vh;
+
 }
+/* padding: 10px;
+}
+.check5_img{
+    padding: -5px 5%;
+    margin-top: -8px 20px;
+    font-size: 21px;
+} */
 
 .top_header{
     background: #000000;
@@ -99,11 +111,17 @@ button{
     background: #F5F5F5;
     border-radius: 4px;
 }
-.icon_header{
-    display: flex;
+.icon_header {
+    margin: 10px 2%;
+    padding: 10px 5%;
     justify-content: space-between;
-    padding: 20px;
-    margin: 20px  3%;
+    font-size: 30px;
+}
+.absolute{
+    background-color: #DB4444;
+    border-radius: 100%;
+    padding: 0px  50%;
+
 }
 
 .main_header{
@@ -111,7 +129,7 @@ button{
     justify-content: space-between;
     padding: 10px 5%;
 }
-hr{
+.hr_header{
     border: 0.5px solid #000000;
 }
 .a_div{
@@ -130,142 +148,124 @@ hr{
 .a_checkout a{
     color: #000000;
 }
-
-.Main_Section{   
-    padding: 90px 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 80px;
-}
-.cart1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    width: 1170px;
-    height: 436px;
-}
-
-.div_One{
-    background-color:  #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;  
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    gap: 284px;
-    padding: 20px 20px;
-    width: 1170px;
-    height: 67px;
-}
-.div_One p{
-    font-family: myfont;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    width: 68px;
-    height: 24px;
-}
-
-.div_two{
-    background-color:  #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    gap: 284px;
-    padding: 20px 20px;
-    width: 1170px;
-    height: 102px;
-   
-}
-.div_two p{
-    font-family: myfont;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-
-.spial_div{
-    display: flex;
-    
-}
-.spial_div img{   
-    width: 50px;
-    height: 39px;
-}
-.spial_div p{
-    height: 24px;
-    width: 96px;
-    left: 114px;
-    top: 39px;
-
-}
-
-.div_Third{
-    background-color:  #FFFFFF;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    gap: 284px;
-    padding: 20px 20px;
-    width: 1170px;
-    height: 102px;
-}
-.div_Third p{
-    font-family: myfont;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-}
-.spial_div2{
-    display: flex;
-}
-.spial_div img{   
-    width: 50px;
-    height: 39px;
-}
-.spial_div p{
-    height: 24px;
-    width: 96px;
-    left: 114px;
-    top: 39px;
-}
-/* start */
-.cart_bor{
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 4%;
-    margin-top: -140px;
-}
-.cart2{
-    border: 1.5px solid #000000;
-    width: 150px;
-    height: 40px;
-    padding: 7px;
-}
-
-.cart2 p{
-    font-family: popinsmed;
+/* End header */
+/* start checkout */
+.checkout1 h1{
+    font-family: intermedium;
     font-weight: 500;
+    font-size: 36px;
+    line-height: 30px;
+    padding: 30px 5%;
+    letter-spacing: 0.04em;
+}
+.checkout_form{
+   padding: 10px 5%;
+}
+
+label{
+    font-family: poppinsfont;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.4;
+}
+input{
+    background: #F5F5F5;
+    border-radius: 4px;   
+    width: 470px;
+    height: 50px;
+    border: none;
+}
+.icon_checkout{
+    display: flex;
+    padding: 40px 10%;
+}
+
+.all_checkout{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 3%;
+}
+.checkout2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+}
+.check1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 224px;
+    width: 430px;
+    height: 54px;
+}
+.check1 p{
+    font-family: pofont;
+    width: 96px;
+    height: 24px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
+.check2{
+    display: flex;
+   padding: 2px;
 
-.cart3{
+}
+.check2 p{
+    font-family: pofont;
+    width: 96px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.check2 img{
+    height: 42px;
+    width: 48px;
+}
+.check3{
+    width: 41px;
+    height: 24px;
+    font-family: pofont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.check4{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 307px;
+}
+.check4 p{
+    font-family: pofont;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.check5_input{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 210px;
+ 
+}
+.check5_img{
+    padding: -5px 5%;
+    margin-top: -8px 20px;
+    font-size: 21px;
+  
+}
+.check6{
     box-sizing: border-box;
     width: 270px;
     height: 50px;
     border: 1px solid #000000;
     border-radius: 4px;
-    
 }
-
-.cart3 p{
+.check6 p{
     font-family: myfont;
     font-weight: 400;
     font-size: 16px;
@@ -273,8 +273,7 @@ hr{
     opacity: 0.5;
     padding: 10px;
 }
-
-.cart4 button{
+.check7 button{
     padding: 12px 40px;
     background: #DB4444;
     border-radius: 4px;
@@ -285,64 +284,27 @@ hr{
     font-size: 13px;
     line-height: 24px;
 }
-.cart5{
+.check7 {
     display: flex;
-    justify-content: flex-start;
-    padding: 30px;
-    margin: 20px 5%;
-    height: 320px;
 }
-
-
-.div_cart{
-    position: absolute;
-    width: 370px;
-    height: 270px;
-    border: 2px solid #000000;
-    margin-left: 65%;
-    margin-top: -300px;
-    box-sizing: border-box;
-    border-radius: 4px;   
-}
-.div_cart h1{
-   font-family: popinsmed;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    padding: 15px;
-}
-.cart{
-    display: flex;
-    justify-content: space-between;   
-    padding: 0.5rem;
-
-}
-.cart p{
-    font-family: myfont;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-   
-}
-
-.btn_cart{
-    padding: 20px 10%;
+.check8 button{
+    padding: 12px 40px;
     background: #DB4444;
     border-radius: 4px;
-    color: #FFFFFF;
     border: none;
-    align-items: center;   
+    color: #FAFAFA;
     font-family: popinsmed;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 24px;
-    margin-left: 70px;
-} 
+}
 hr{
     width: 300px;
     border: 1px solid #000000;
    margin-left: 20px;
 }
+
+
 /* start footer */
 footer{
     height: 50vh;
@@ -457,8 +419,3 @@ footer{
     font-size: 25px;
 }
 /* End footer */
-
-    
-
-
-
